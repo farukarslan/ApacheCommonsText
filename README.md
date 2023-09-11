@@ -22,4 +22,4 @@ You can change the `Version` option to specify a [preview version](https://www.n
 
 ## License
 
-ApacheCommonsText Plugin is licensed under [Apache 2.0 license](LICENSE)
+ApacheCommonsText Plugin is licensed under [Apache 2.0 license](LICENSE.txt)
