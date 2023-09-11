@@ -1,0 +1,40 @@
+﻿<metadata>
+
+  <!-- VISIBILITY -->
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='IllegalArgumentExceptions']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='InetAddressKeys']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='InterpolatorStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='JavaPlatformStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='LocalHostStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='PropertiesStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='ResourceBundleStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='ScriptStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='UrlDecoderStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='UrlEncoderStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='UrlStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='XmlStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='FunctionStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='FileStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='DnsStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='DateStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='ConstantStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='BiFunctionStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.lookup']/class[@name='AbstractStringLookup']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.matcher']/class[@name='AbstractStringMatcher']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.numbers']/class[@name='ParsedDecimal']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.similarity']/interface[@name='Tokenizer']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.similarity']/class[@name='RegexTokenizer']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.similarity']/class[@name='Counter']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.apache.commons.text.translate']/class[@name='SinglePassTranslator']" name="visibility">public</attr>
+
+  <!-- REMOVE NODES -->
+	<remove-node path="/api/package[@name='org.apache.commons.text.similarity']/class[@name='Counter']/method[@name='of' and count(parameter)=1 and parameter[1][@type='java.lang.CharSequence[]']]" />
+
+  <!-- ADD NODES -->
+  <add-node path="/api/package[@name='org.apache.commons.text.similarity']/class[@name='Counter']">
+    <method name="of" return="java.util.Map&lt;java.lang.String, java.lang.Integer&gt;" abstract="false" native="false" synchronized="false" static="true" final="false" deprecated="not deprecated" visibility="public">
+      <parameter name="tokens" type="java.lang.CharSequence[]" />
+    </method>
+  </add-node> 
+	
+</metadata>

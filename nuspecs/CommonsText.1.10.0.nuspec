@@ -1,0 +1,28 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ApacheCommonsText</id>
+    <version>1.10.0</version>
+    <title>ApacheCommonsText</title>
+    <authors>Ömer Faruk Arslan</authors>
+    <owners>Ömer Faruk Arslan</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/farukarslan/ApacheCommonsText</projectUrl>
+    <description>ApacheCommonsText - Apache commons-text</description>
+    <copyright>© Ömer Faruk Arslan. All rights reserved.</copyright>
+    <tags>Ömer Faruk Arslan ApacheCommonsText</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid12.0">
+        <dependency id="ApacheCommonsLang" version="3.12.0" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid12.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin/Release/ApacheCommonsText.dll" target="lib/monoandroid120/ApacheCommonsText.dll" />
+    <file src="../../README.md" target="" />
+    <file src="../../LICENSE.txt" target="" />
+  </files>
+</package>
